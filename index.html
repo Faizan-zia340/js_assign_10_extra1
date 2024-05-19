@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let int = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+
+let modified_Elements = [];
+
+for (let i = 0; i < int.length; i++) {
+    if (int[i] % 3 === 0 && int[i] % 5 === 0) {
+        modified_Elements.push('ThreeFive');
+    } else if (int[i] % 3 === 0) {
+        modified_Elements.push('Three');
+    } else if (int[i] % 5 === 0) {
+        modified_Elements.push('Five');
+    } else {
+        modified_Elements.push(int[i]);
+    }
+}
+
+document.write(modified_Elements);
+
+    
+ 
+     
+   
+
+
+
+    </script>
+</body>
+</html>
